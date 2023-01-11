@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Demo2-->
+        <scene sceneID="abe-4O-ShN">
+            <objects>
+                <viewController storyboardIdentifier="Demo2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="keq-hS-jfj" customClass="Demo2" customModule="demoteach" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kJJ-x8-JCX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JD0-zf-OAt">
+                                <rect key="frame" x="0.0" y="44" width="414" height="532"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="XIB">
+                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="SendWith_sender:" destination="keq-hS-jfj" eventType="touchUpInside" id="ODt-nn-by8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFH-6o-6f3">
+                                <rect key="frame" x="162" y="693" width="106" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="左右跳轉">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="SendpopWith_sender:" destination="keq-hS-jfj" eventType="touchUpInside" id="m1X-IV-eWq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pSy-BE-rrW" firstAttribute="bottom" secondItem="YFH-6o-6f3" secondAttribute="bottom" constant="125" id="Epz-xM-iyu"/>
+                            <constraint firstItem="pSy-BE-rrW" firstAttribute="bottom" secondItem="JD0-zf-OAt" secondAttribute="bottom" id="Jtn-HS-a1U"/>
+                            <constraint firstItem="JD0-zf-OAt" firstAttribute="leading" secondItem="pSy-BE-rrW" secondAttribute="leading" id="PSk-0O-GXu"/>
+                            <constraint firstItem="JD0-zf-OAt" firstAttribute="top" secondItem="pSy-BE-rrW" secondAttribute="top" id="TsL-o2-uWc"/>
+                            <constraint firstItem="pSy-BE-rrW" firstAttribute="trailing" secondItem="YFH-6o-6f3" secondAttribute="trailing" constant="146" id="bmb-NP-BQO"/>
+                            <constraint firstItem="pSy-BE-rrW" firstAttribute="trailing" secondItem="JD0-zf-OAt" secondAttribute="trailing" id="cxX-1X-NMe"/>
+                            <constraint firstItem="YFH-6o-6f3" firstAttribute="leading" secondItem="pSy-BE-rrW" secondAttribute="leading" constant="162" id="duM-9c-2ks"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pSy-BE-rrW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="brA-SS-TNa"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ncl-Xu-sAn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="472" y="316"/>
+        </scene>
+    </scenes>
+</document>
